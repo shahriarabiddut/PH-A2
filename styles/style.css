@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+body {
+  margin: 0;
+  padding: 0 10%;
+  font-family: "Inter", sans-serif;
+  /* background-color: black; */
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+/* Shared Styles */
+.primary {
+  color: #e6533c;
+}
+.btn-primary {
+  background-color: transparent;
+  padding: 16px 40px;
+  border-radius: 42px;
+  color: white;
+  border: 1px solid white;
+}
+.btn-active {
+  background-color: #e6533c;
+  padding: 16px 40px;
+  border-radius: 42px;
+  color: white;
+  border: none;
+}
+/* Training */
+.training-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.tcards {
+  position: relative;
+  color: white;
+}
+.t-bottom-left {
+  position: absolute;
+  left: 24px;
+  bottom: 27.5px;
+}
+.t-top-left {
+  position: absolute;
+  top: 25px;
+  left: 31px;
+}
+.t-top-right {
+  position: absolute;
+  top: 25px;
+  right: 31px;
+}
+.tcard-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+/* Team */
+.team-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.team-members {
+  position: relative;
+  color: white;
+}
+.bottom-left {
+  position: absolute;
+  left: 19px;
+  bottom: 1rem;
+}
+.head-team {
+  font-size: 20px;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+.bottom-team {
+  font-size: 14px;
+  font-weight: 200;
+}
