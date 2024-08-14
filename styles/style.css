@@ -108,6 +108,7 @@ header {
   position: absolute;
   left: 12%;
   bottom: 42%;
+  font-size: 16px;
 }
 nav ul {
   display: flex;
@@ -488,7 +489,7 @@ footer a {
   display: none;
 }
 /* Medium Size Device */
-@media screen and (max-width: 62rem) {
+@media screen and (min-width: 36rem) and (max-width: 62rem) {
   #work-badge {
     right: 23%;
     top: 10%;
@@ -498,7 +499,7 @@ footer a {
     bottom: 27%;
   }
   .left {
-    padding: 10% 10% 0 10%;
+    padding: 10% 20% 0 10%;
   }
   .hero {
     grid-template-columns: repeat(1, 1fr);
@@ -572,6 +573,10 @@ footer a {
   .hidden3 {
     display: none;
   }
+  .play {
+    left: 12%;
+    bottom: 42%;
+  }
 }
 /* Small Size Device */
 @media screen and (max-width: 36rem) {
@@ -584,13 +589,27 @@ footer a {
   .left {
     padding: 10%;
   }
+  .play {
+    left: 14%;
+    bottom: 40%;
+  }
   #work-badge {
     right: 15%;
     top: 10%;
+    font-size: 9px;
+  }
+  #work-year {
+    font-size: 30px;
+    font-weight: 600;
   }
   #experience-badge {
     left: 23%;
     bottom: 45%;
+    font-size: 12px;
+  }
+  #experience-year {
+    font-size: 18px;
+    font-weight: 600;
   }
   .excercize {
     grid-template-columns: repeat(1, 1fr);
