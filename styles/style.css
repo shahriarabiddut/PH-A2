@@ -3,7 +3,7 @@ body {
   margin: 0;
   /* padding: 0 10%; */
   font-family: "Inter", sans-serif;
-  /* background-color: black; */
+  background-color: red;
 }
 a {
   text-decoration: none;
@@ -13,6 +13,21 @@ li {
 }
 img {
   max-width: 100%;
+}
+form {
+  font-size: 1rem;
+  margin-top: 34px;
+  margin-bottom: 10%;
+}
+input,
+select {
+  padding: 12px 20px;
+  width: 100%;
+  border: 1px solid #383838;
+  border-radius: 8px;
+  background-color: #383838;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 12px;
 }
 /* Shared Styles */
 .upad {
@@ -38,6 +53,12 @@ img {
 }
 h1 {
   font-size: 3rem;
+  color: white;
+  margin-bottom: 0.875rem;
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.75rem;
   color: white;
   margin-bottom: 0.875rem;
 }
@@ -95,8 +116,47 @@ h1 {
 /* BMI */
 .bmi {
   padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: red;
+  background-color: black;
+}
+.bmi-header {
+  margin-bottom: 5%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.bmi-extra {
+  background-color: #222222;
+  padding: 2% 10%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 10%;
+}
+table {
+  margin: 15% 0;
+}
+table,
+th,
+td {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+  padding: 1rem 1.25rem;
+  text-align: left;
+  color: white;
+}
+td {
+  color: rgba(255, 255, 255, 0.5);
+}
+button {
+  cursor: pointer;
+}
+.two-input {
+  display: flex;
+  gap: 2%;
+}
+.bmi-form-control {
+  flex: 1; /* This makes both inputs take up equal space */
+}
+.one-input {
+  margin-bottom: 34px;
 }
 /* Team */
 .team {
@@ -107,6 +167,8 @@ h1 {
 .team-header {
   text-align: center;
   margin-bottom: 4%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .team-gallery {
   display: grid;
@@ -198,12 +260,28 @@ footer a {
     padding-left: 5%;
     padding-right: 5%;
   }
+  .bmi-extra {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .bmi-header {
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .team-header {
+    padding: 0;
+  }
   .footer {
     gap: 1%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
-
+  table {
+    margin: 10% 0;
+  }
   .footer-left {
     grid-column: span 2; /* Make the first item span both columns */
   }
@@ -221,10 +299,27 @@ footer a {
   body {
     background-color: red;
   }
-
-  .team-gallery {
+  table {
+    margin: 2% 0;
+  }
+  .team-header {
+    padding: 0;
+  }
+  .bmi-header {
+    margin-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .bmi-extra {
+    padding-left: 2%;
+    padding-right: 2%;
+    gap: 1%;
+  }
+  .team-gallery,
+  .bmi-extra {
     grid-template-columns: repeat(1, 1fr);
   }
+
   .footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 1%;
@@ -243,5 +338,11 @@ footer a {
   .upad {
     padding-left: 2%;
     padding-right: 2%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1rem;
   }
 }

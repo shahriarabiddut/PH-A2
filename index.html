@@ -133,16 +133,16 @@
           </div>
         </div>
       </section>
-      <section class="bmi upad">
+      <section class="bmi">
         <div class="bmi-header">
           <h1>BMI Calculator</h1>
-          <p>
+          <p class="description">
             We believe fitness should be accessible to everyone, everywhere,
             regardless of income or access to a gym.
           </p>
         </div>
 
-        <div class="bmiextra">
+        <div class="bmi-extra">
           <div class="bmi-left">
             <h3>BMI Calculator Chart</h3>
             <table class="bmi-table">
@@ -174,18 +174,26 @@
           </div>
           <div class="bmi-right">
             <h3>Calculate your BMI</h3>
-            <p>
+            <p class="description">
               We believe fitness should be accessible to everyone, everywhere,
               regardless of income or access to a gym.
             </p>
             <form action="" class="bmi-form">
               <div class="two-input">
-                <input type="text" placeholder="Height/cm" />
-                <input type="text" placeholder="Weight/kg" />
+                <input
+                  type="text"
+                  class="bmi-form-control"
+                  placeholder="Height/cm"
+                />
+                <input
+                  type="text"
+                  class="bmi-form-control"
+                  placeholder="Weight/kg"
+                />
               </div>
               <div class="two-input">
-                <input type="text" placeholder="Age" />
-                <select name="" id="">
+                <input type="text" placeholder="Age" class="bmi-form-control" />
+                <select name="" id="" class="bmi-form-control">
                   <option value="" selected>Sex</option>
                   <option value="">Male</option>
                   <option value="">Female</option>
@@ -198,7 +206,7 @@
                   <option value="">Female</option>
                 </select>
               </div>
-              <button type="submit" class="btn-primary">Calculate</button>
+              <button type="submit" class="btn-active">Calculate</button>
             </form>
           </div>
         </div>
