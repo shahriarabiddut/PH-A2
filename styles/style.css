@@ -75,14 +75,35 @@ h3 {
 }
 /* Extra Miles */
 .extra-miles {
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 5%;
-  background-color: red;
+  background-color: black;
+}
+.miles {
+  padding: 5%;
+  border-radius: 18px;
+  background-color: #222222;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  gap: 20%;
+}
+.pt-1 {
+  padding-top: 1rem;
+}
+.pb-2 {
+  padding-bottom: 2rem;
+}
+.right-miles {
+  overflow: hidden;
+  padding: 0 20%;
+  border-radius: 18px;
+}
+.right-miles img {
+  transform: scale(5) translateX(-14%) translateY(23%);
 }
 /* Training */
 .training {
   padding-top: 5%;
-  /* padding-bottom: 5%; */
   background-color: black;
 }
 .training-header {
@@ -214,7 +235,7 @@ button {
   gap: 2%;
 }
 .bmi-form-control {
-  flex: 1; /* This makes both inputs take up equal space */
+  flex: 1;
 }
 .one-input {
   margin-bottom: 34px;
@@ -323,6 +344,15 @@ footer a {
     padding-left: 5%;
     padding-right: 5%;
   }
+  .mtitle {
+    font-size: 2.25rem;
+  }
+  .right-miles {
+    padding: 0 10%;
+  }
+  .right-miles img {
+    transform: scale(7) translateX(-14%) translateY(24%);
+  }
   .training-header {
     width: 90%;
   }
@@ -368,6 +398,18 @@ footer a {
   body {
     background-color: red;
   }
+  .mtitle {
+    font-size: 2rem;
+  }
+  .miles {
+    grid-template-columns: 1fr;
+    gap: 10%;
+  }
+  .right-miles {
+    padding: 0;
+  }
+  .right-miles img {
+    transform: scale(1.2) translateX(0) translateY(6%);
   table {
     margin: 2% 0;
   }
