@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 body {
   margin: 0;
-  padding: 0 10%;
+  /* padding: 0 10%; */
   font-family: "Inter", sans-serif;
   /* background-color: black; */
 }
@@ -15,6 +15,9 @@ img {
   max-width: 100%;
 }
 /* Shared Styles */
+.upad {
+  padding: 0 10%;
+}
 .primary {
   color: #e6533c;
 }
@@ -84,4 +87,94 @@ img {
 .bottom-team {
   font-size: 14px;
   font-weight: 200;
+}
+
+/* Footer */
+footer {
+  background-color: #191919;
+}
+footer h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  color: white;
+  text-align: left;
+  padding: 5% 0;
+  gap: 10%;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.5);
+}
+.footer ul {
+  padding: 0;
+}
+.footer ul li {
+  margin-bottom: 20px;
+}
+.footer-left {
+  width: 70%;
+}
+.footer-logo {
+  font-size: 70px;
+  color: #e6533c;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.footer-desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+}
+.copyright {
+  padding: 3%;
+  text-align: center;
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.5);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Medium Size Device */
+@media screen and (max-width: 62rem) {
+  body {
+    background-color: blue;
+  }
+  .upad {
+    padding: 0 5%;
+  }
+  .footer {
+    gap: 1%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .footer-left {
+    grid-column: span 2; /* Make the first item span both columns */
+  }
+
+  .footer-mid {
+    grid-column: 1; /* Place the second item in the first column */
+  }
+
+  .footer-right {
+    grid-column: 2; /* Place the third item in the second column */
+  }
+}
+/* Small Size Device */
+@media screen and (max-width: 36rem) {
+  body {
+    background-color: red;
+  }
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1%;
+  }
+  .upad {
+    padding: 0 2%;
+  }
 }
