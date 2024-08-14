@@ -82,14 +82,30 @@ h3 {
 /* Training */
 .training {
   padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: red;
+  /* padding-bottom: 5%; */
+  background-color: black;
 }
-.training-cards {
+.training-header {
+  width: 50%;
+  padding-bottom: 5%;
+}
+.training-cards-left {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 5fr 3fr;
   justify-items: center;
 }
+.training-cards-right {
+  display: grid;
+  grid-template-columns: 5fr 3fr 4fr;
+  justify-items: center;
+}
+.training-cards-left img,
+.training-cards-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .tcards {
   position: relative;
   color: white;
@@ -112,6 +128,51 @@ h3 {
 .tcard-text {
   font-size: 14px;
   font-weight: 400;
+}
+.tcards .overlay1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 255, 210, 0.5);
+  pointer-events: none;
+}
+.tcards .overlay2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  pointer-events: none;
+}
+.tcards .overlay3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+.tcards .overlay4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(66, 255, 0, 0.5);
+  pointer-events: none;
+}
+.tcards .overlay5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 71, 255, 0.5);
+  pointer-events: none;
 }
 /* BMI */
 .bmi {
@@ -250,7 +311,9 @@ footer a {
   color: rgba(255, 255, 255, 0.5);
   border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
-
+.hidden {
+  display: visible;
+}
 /* Medium Size Device */
 @media screen and (max-width: 62rem) {
   body {
@@ -259,6 +322,9 @@ footer a {
   .upad {
     padding-left: 5%;
     padding-right: 5%;
+  }
+  .training-header {
+    width: 90%;
   }
   .bmi-extra {
     grid-template-columns: repeat(1, 1fr);
@@ -293,6 +359,9 @@ footer a {
   .footer-right {
     grid-column: 2; /* Place the third item in the second column */
   }
+  .hidden {
+    display: visible;
+  }
 }
 /* Small Size Device */
 @media screen and (max-width: 36rem) {
@@ -301,6 +370,22 @@ footer a {
   }
   table {
     margin: 2% 0;
+  }
+  .hidden {
+    display: none;
+  }
+  .training-cards-left {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    justify-items: center;
+  }
+  .training-cards-right {
+    display: grid;
+    grid-template-columns: 4fr 5fr;
+    justify-items: center;
+  }
+  .training-header {
+    width: 100%;
   }
   .team-header {
     padding: 0;
