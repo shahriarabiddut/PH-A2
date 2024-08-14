@@ -16,7 +16,8 @@ img {
 }
 /* Shared Styles */
 .upad {
-  padding: 0 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .primary {
   color: #e6533c;
@@ -35,7 +36,34 @@ img {
   color: white;
   border: none;
 }
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 0.875rem;
+}
+.description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 24px;
+}
+/* Excercizes */
+.excercizes {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: red;
+}
+/* Extra Miles */
+.extra-miles {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: red;
+}
 /* Training */
+.training {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: red;
+}
 .training-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -64,15 +92,41 @@ img {
   font-size: 14px;
   font-weight: 400;
 }
+/* BMI */
+.bmi {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: red;
+}
 /* Team */
+.team {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: black;
+}
+.team-header {
+  text-align: center;
+  margin-bottom: 4%;
+}
 .team-gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+  background-color: #191919;
+  margin: 0px auto;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 1.125rem;
 }
 .team-members {
   position: relative;
   color: white;
+}
+.team-members img {
+  border-radius: 1.125rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .bottom-left {
   position: absolute;
@@ -102,7 +156,8 @@ footer h2 {
   grid-template-columns: 3fr 1fr 1fr;
   color: white;
   text-align: left;
-  padding: 5% 0;
+  padding-top: 5%;
+  padding-bottom: 5%;
   gap: 10%;
 }
 footer a {
@@ -126,11 +181,6 @@ footer a {
   font-weight: 800;
   margin-bottom: 20px;
 }
-.footer-desc {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.5);
-  line-height: 24px;
-}
 .copyright {
   padding: 3%;
   text-align: center;
@@ -145,7 +195,8 @@ footer a {
     background-color: blue;
   }
   .upad {
-    padding: 0 5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .footer {
     gap: 1%;
@@ -170,11 +221,27 @@ footer a {
   body {
     background-color: red;
   }
+
+  .team-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .footer {
     grid-template-columns: repeat(1, 1fr);
     gap: 1%;
   }
+  .footer-left {
+    grid-column: 1; /* Make the first item span both columns */
+  }
+
+  .footer-mid {
+    grid-column: 1; /* Place the second item in the first column */
+  }
+
+  .footer-right {
+    grid-column: 1; /* Place the third item in the second column */
+  }
   .upad {
-    padding: 0 2%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
